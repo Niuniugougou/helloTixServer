@@ -147,8 +147,45 @@ module.exports = {
                     }
                 ]
             }
-        ]
-        }
+            ]
+        },
+        {
+            "id": "15",
+            "parentId": "1",
+            "url": "",
+            "name": "有趣的功能",
+            "sequence": 1,
+            "icon": "group",
+            "children": [
+                {
+                    "id": "151",
+                    "parentId": "15",
+                    "url": "/admin/progressBar",
+                    "name": "不一样的进度条",
+                    "sequence": 1,
+                    "icon": "news",
+                    "children": []
+                },
+                {
+                    "id": "152",
+                    "parentId": "15",
+                    "url": "/admin/editTable",
+                    "name": "可编辑table",
+                    "sequence": 2,
+                    "icon": "news",
+                    "children": []
+                },
+                {
+                    "id": "153",
+                    "parentId": "15",
+                    "url": "/admin/editTree",
+                    "name": "可编辑Tree",
+                    "sequence": 3,
+                    "icon": "news",
+                    "children": []
+                }
+            ]
+        },
         ]
     }
 }
