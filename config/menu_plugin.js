@@ -183,6 +183,15 @@ module.exports = {
                     "sequence": 3,
                     "icon": "news",
                     "children": []
+                },
+                {
+                    "id": "154",
+                    "parentId": "15",
+                    "url": "/admin/process",
+                    "name": "可拖拽流程图",
+                    "sequence": 4,
+                    "icon": "news",
+                    "children": []
                 }
             ]
         },
