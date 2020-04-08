@@ -11,11 +11,11 @@ module.exports = appInfo => {
   // 配置单个数据库的连接情况
   exports.mysql = {
     client: {
-      host: '139.196.83.17', //自己数据库地址
+      host: '', //自己数据库地址
       port: '3306',//端口号
-      user: 'niuniugougou',//用户名
-      password: 'niuniugougou',//密码
-      database: 'niuniugougou'//数据库
+      user: '',//用户名
+      password: '',//密码
+      database: ''//数据库
     },
     // 是否加载到 app 上，默认开启
     app: true,
