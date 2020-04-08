@@ -11,11 +11,11 @@ module.exports = appInfo => {
   // 配置单个数据库的连接情况
   exports.mysql = {
     client: {
-      host: '', //自己数据库地址
+      host: '139.196.83.17', //自己数据库地址
       port: '3306',//端口号
-      user: '',//用户名
-      password: '',//密码
-      database: ''//数据库
+      user: 'niuniugougou',//用户名
+      password: 'niuniugougou',//密码
+      database: 'niuniugougou'//数据库
     },
     // 是否加载到 app 上，默认开启
     app: true,
@@ -35,7 +35,11 @@ module.exports = appInfo => {
   //不配置就访问不到这个路径
   config.static = {
     prefix:'/app/public/',
-    dir: [path.join(appInfo.baseDir, 'app/public'), path.join(appInfo.baseDir, 'app/public/uploadfile')]
+    dir: [path.join(appInfo.baseDir, 'app/public'), path.join(appInfo.baseDir, 'app/public/uploadfile')],
+    dynamic: true, // 如果当前访问的静态资源没有缓存，则缓存静态文件，和`preload`配合使用；
+    preload: false,
+    maxAge: 31536000, // in prod env, 0 in other envs
+    buffer: true, // in prod env, false in other envs
   }
 
   return {
